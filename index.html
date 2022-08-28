@@ -4,50 +4,63 @@
 
 <head>
 	<meta charset="utf-8">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sprint Challenge - Home</title>
-
+	<link rel="stylesheet" href="css/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<div>
-		<!-- header -->
-		<header>
-			<div>
-				BLOOMTECH BAR AND GRILL
 
-				<!-- nav -->
-				Menu
-				Reservations
-				Special Offers
-				Contact
+		<header>
+			<div class="topsection">
+				<!-- <div class="home" class="pic">
+					<img src="img/home-header.jpg" alt="Our Bar in the dinning area">
+				</div> -->
+					<h1>BLOOMTECH BAR AND GRILL</h1>
+					<nav class="topmid">
+					<!-- nav -->
+						<button><a href="menu.html">Menu</a></button>
+						<button><a href="index.html">Reservations</a></button>
+						<button><a href="index.html">Special Offers</a></button>
+						<button><a href="index.html">Contact</a></button>
+					</nav>
 			</div>
 		</header>
 
 		<!-- gallery section -->
 		<section class="gallery">
-			<div>
-				<h2>OUR FOOD</h2>
-
-				img/food-avocadotoast.jpg
-
-				img/food-burger.jpg
-
-				img/food-poutine.jpg
-
-				img/food-ribs.jpg
-
-				img/food-sandwich.jpg
-
-				img/food-sausage.jpg
-
-				img/food-steak.jpg
-
-				img/food-tacos.jpg
-
-				img/food-wings.jpg
+			<h2>OUR FOOD</h2>
+			<div class="food">
+				<div class="food-el">
+					<img src="img/food-avocadotoast.jpg" alt="avocado toast">
+				</div>
+				<div class="food-el">
+					<img src="img/food-burger.jpg" alt="burger and pasta">
+				</div>
+				<div class="food-el">
+					<img src="img/food-poutine.jpg" alt="poutine">
+				</div>
+				<div class="food-el">
+					<img src="img/food-ribs.jpg" alt="short ribs">
+				</div>
+				<div class="food-el">
+					<img src="img/food-sandwich.jpg" alt="club sandwich">
+				</div>
+				<div class="food-el">
+					<img src="img/food-sausage.jpg" alt="sausage dog">
+				</div>
+				<div class="food-el">
+					<img src="img/food-steak.jpg" alt="grilled steak with asparagus">
+				</div>
+				<div class="food-el">
+					<img src="img/food-tacos.jpg" alt="chicken tacos">
+				</div>
+				<div class="food-el">
+					<img src="img/food-wings.jpg" alt="dry rub wings">
+				</div>
 			</div>
 		</section>
 
@@ -59,8 +72,9 @@
 			<div class="about-container">
 				<h2>ABOUT US</h2>
 
-				<div id="cooks" class="pic">
-				</div>
+				<!-- <div id="cooks" class="pic">
+					<img src="img/staff-cooks.jpg" alt="Our Cooks">
+				</div> -->
 
 				<div class="text">
 					<h3>Good Food, Great People</h3>
@@ -68,13 +82,13 @@
 						tempor meatloaf pig sunt porchetta beef. Ad hamburger pig veniam, andouille exercitation cillum
 						eiusmod doner irure tail burgdoggen rump chislic officia. Pancetta frankfurter sed, est t-bone
 						porchetta capicola id tri-tip cillum cow leberkas do minim. Sausage ea velit boudin laboris
-						dolore
-						short loin corned beef commodo jowl beef dolor tempor. Dolor culpa enim in meatloaf, ham mollit
+						dolore short loin corned beef commodo jowl beef dolor tempor. Dolor culpa enim in meatloaf, ham mollit
 						shankle duis chicken dolore andouille do tenderloin qui.</p>
 				</div>
-
-				<div id="bartender" class="pic">
-				</div>
+				
+				<!-- <div id="jumbo" class="pic">
+					<img src="img/jumbo-restaurant.jpg" alt="an inviting Space for everyone">
+				</div> -->
 			</div>
 		</section>
 
@@ -124,16 +138,25 @@
 
 		<!-- footer -->
 		<footer>
-			<!-- email signup -->
-			Join our mailing list!
-			Sign Up
-			<!-- nav -->
-			Menu
-			Reservations
-			Special Offers
-			Contact
-			<!-- copyright -->
-			©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.
+				<div class="signupbox">
+					<!-- email signup -->
+					<h4>Join our mailing list!</h3>
+					<form action="">
+						<input type="email" placeholder="Email Address">
+						<button><a href="">Sign Up</a></button>
+					</form>
+				</div>
+				<div class="botrightbox">	<!-- <div class="botrightbox"> -->
+					<nav class="footnav">
+						<button><a href="menu.html">Menu</a></button>
+						<button><a href="index.html">Reservations</a></button>
+						<button><a href="index.html">Special Offers</a></button>
+						<button><a href="index.html">Contact</a></button>
+					</nav>
+					<div class="copyright">
+						<h6>©2022 BloomTech Restaurant Group, Inc. All Rights Reserved.</h6>
+					</div>
+				</div>
 		</footer>
 	</div>
 </body>

@@ -47,15 +47,21 @@ table {
 	border-spacing: 0;
 }
 
+
+/* AFTER RESET */
 * {
     box-sizing: border-box;
+    max-width: 100%;
+    color: white;  
 }
 
 html {
     max-width: 1920px;
     min-width: 428px;
     width: 100%;
+    margin: 1%;
     font-size: 62.5%;
+    
 }
 
 body {
@@ -78,9 +84,19 @@ h2 {
 h3 {
     font-size: 5rem;
 }
+h4 {
+    font-size: 3.5rem;
+}
+h6 {
+    font-size: 2rem;
+}
 
 p, a {
     font-size: 3rem;
+}
+button {
+    border: none;
+    background: none;
 }
 
 /* header section */
@@ -92,9 +108,28 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+header .topsection {
+    /* border: 1px solid lime; */
+    background-color: black;
+    opacity: .8;
+    height: 28.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.topsection nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.topmid {
+    width: 90%;
+}
 
 /* spacers */
 .spacer {
+    /* border: 1px solid lime; */
     width: 100%;
     height: 20vh;
     background-color: rgb(0, 4, 17);
@@ -107,14 +142,33 @@ header {
 
 /* gallery section */
 .gallery {
+    /* border: 1px solid salmon; */
+    padding: 2%;
     width: 100%;
     height: 100vh;
     text-align: center;
     background-color: rgb(0, 4, 17);
 }
+/* .food {
+    max-height: 90%;
+} */
+.gallery .food {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0 2% 2% 2%;
+    
+}
+.food .food-el {
+    /* border: 1px solid pink; */
+    width: 27%;
+    padding: 1.5%;
+}
 
 /* about us section */
 .about {
+    /* border:1px solid blue; */
     width: 100%;
     height: 75vh;
     text-align: center;
@@ -125,6 +179,7 @@ header {
 }
 
 .about-container {
+    /* border:1px solid blue; */
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -134,11 +189,18 @@ header {
 }
 
 .about h2 {
+    /* border:1px solid pink; */
     width: 100%;
 }
 
 .about-container .text {
+    /* border:1px solid lime; */
     width: 50%;
+    text-align: center;
+    /* margin: 4% 0 0 0; */
+}
+.text p {
+    font-size: 2.7rem;
 }
 
 /* contact us section */
@@ -190,35 +252,126 @@ header {
 
 /* footer section */
 footer {
+    /* border: 1px solid red; */
     width: 100%;
-    height: 15vh;
+    height: 19vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.signupbox {
+    /* border: 1px solid blue; */
+    
+    width: 34%;
+    height: 19vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signupbox form {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.signupbox input {
+    width: 70%;
+    height: 100%;
+    padding:0%;
+    margin: 0%;
+}
+.signupbox button {
+    background-color: gray;
+    border: 1px solid black;
+    width: 30%;
+} 
+.botrightbox {
+    /* border: 1px solid lime; */
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footnav {
+    /* border: 1px solid pink; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer .copyright {
+    /*  */
 }
 
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+    header .topsection {
+        background-color: black;
+        opacity: .8;
+        height: 49%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* align-content: space-evenly; */
+        /* align-items: center; */
+    }
+    header .topmid {
+        /* border: 1px solid lime; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-evenly; */
+    }
+    .topmid button {
+        /* border: 1px solid purple; */
+        margin: 2%;
+    }
+    header h1 {
+        
+        width: 55%;
+        height: 30;
+        font-size: 3rem;
+        text-align: center;
+        margin:5%
+    }
 
     /* gallery section */
     .gallery {
         height: auto;
     }
-    
+    .gallery .food {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .food .food-el {
+        
+        width: 110%;
+        margin: 0;
+        padding: 4% 0%;
+    }
     /* about us section */
 
     .about {
         height: 200vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .about h2 {
         width: 100%;
-        padding-top: 5vh;
     }
     
     .about-container .text {
         width: 85%;
+        padding: 3%;
     }
     
     /* contact us section */
@@ -249,5 +402,58 @@ footer {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .signupbox {
+        width: 100%;
+        padding-bottom: -3%;
+        margin-bottom: 0;
+    }
+    .signupbox h4 {
+        font-size: 2rem;
+    }
+    .signupbox form{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .signupbox input {
+        width: 100%;
+        /* height: 100; */
+    }
+    .signupbox button {
+        width: 100%;
+    } 
+    .botrightbox {
+        /* border: 1px solid lime; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        align-items: center;
+    }
+    
+    .footnav {
+        border: 1px solid pink;
+        width: 100%;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .footnav button {
+        padding: 1%
+    }
+    .copyright h6 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    footer .copyright {
+        /* border: 1px solid yellow; */
+        width: 60%;
+        height: 20%;
     }
 }
+/* border: 1px solid purple; */
